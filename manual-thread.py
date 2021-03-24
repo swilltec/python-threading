@@ -19,7 +19,7 @@ def call_multi_time_sleep_thread():
     """Created multi threads using manual thread method"""
     print('\nCalling starting function with threading')
     threads = []
-    for _ in range(10):
+    for _ in range(100):
         t = threading.Thread(target=time_sleep, args=[1])
         t.start()
         threads.append(t)
